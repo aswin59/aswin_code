@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="11" failures="9" name="TestSuite" time="267.91" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.60-b23"/>
+    <property name="user.country.format" value="IN"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/monocept/Desktop/ads-android-master"/>
+    <property name="java.runtime.version" value="1.8.0_60-b27"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="basedir" value="/Users/monocept/Desktop/ads-android-master"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="surefire.real.class.path" value="/var/folders/6y/3w4t1jld3997y9q_6cvwswqr0000gn/T/surefirebooter1059516785436673033.jar:/Users/monocept/.m2/repository/org/aspectj/aspectjweaver/1.8.5/aspectjweaver-1.8.5.jar"/>
+    <property name="java.io.tmpdir" value="/var/folders/6y/3w4t1jld3997y9q_6cvwswqr0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="https.proxyHost" value="127.0.0.1"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/monocept/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="http.proxyPort" value="8888"/>
+    <property name="surefire.test.class.path" value="/Users/monocept/Desktop/ads-android-master/target/test-classes:/Users/monocept/Desktop/ads-android-master/target/classes:/Users/monocept/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/monocept/.m2/repository/org/testng/testng/6.9.4/testng-6.9.4.jar:/Users/monocept/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/Users/monocept/.m2/repository/com/beust/jcommander/1.48/jcommander-1.48.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/selenium-server/2.51.0/selenium-server-2.51.0.jar:/Users/monocept/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.jar:/Users/monocept/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.jar:/Users/monocept/.m2/repository/mx4j/mx4j-tools/3.0.1/mx4j-tools-3.0.1.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.2.13.v20150730/jetty-repacked-9.2.13.v20150730.jar:/Users/monocept/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/jetty-rc-repacked/5/jetty-rc-repacked-5.jar:/Users/monocept/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/monocept/.m2/repository/org/yaml/snakeyaml/1.8/snakeyaml-1.8.jar:/Users/monocept/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/selenium-java/2.51.0/selenium-java-2.51.0.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/2.51.0/selenium-chrome-driver-2.51.0.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/2.51.0/selenium-edge-driver-2.51.0.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/selenium-htmlunit-driver/2.51.0/selenium-htmlunit-driver-2.51.0.jar:/Users/monocept/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.18/htmlunit-2.18.jar:/Users/monocept/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/Users/monocept/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/Users/monocept/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar:/Users/monocept/.m2/repository/org/apache/httpcomponents/httpmime/4.5/httpmime-4.5.jar:/Users/monocept/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.17/htmlunit-core-js-2.17.jar:/Users/monocept/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/Users/monocept/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/monocept/.m2/repository/net/sourceforge/nekohtml/nekohtml/1.9.22/nekohtml-1.9.22.jar:/Users/monocept/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.16/cssparser-0.9.16.jar:/Users/monocept/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar:/Users/monocept/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.2.12.v20150709/websocket-client-9.2.12.v20150709.jar:/Users/monocept/.m2/repository/org/eclipse/jetty/jetty-util/9.2.12.v20150709/jetty-util-9.2.12.v20150709.jar:/Users/monocept/.m2/repository/org/eclipse/jetty/jetty-io/9.2.12.v20150709/jetty-io-9.2.12.v20150709.jar:/Users/monocept/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.2.12.v20150709/websocket-common-9.2.12.v20150709.jar:/Users/monocept/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.2.12.v20150709/websocket-api-9.2.12.v20150709.jar:/Users/monocept/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.51.0/selenium-ie-driver-2.51.0.jar:/Users/monocept/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar:/Users/monocept/.m2/repository/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/2.51.0/selenium-safari-driver-2.51.0.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/selenium-support/2.51.0/selenium-support-2.51.0.jar:/Users/monocept/.m2/repository/org/webbitserver/webbit/0.4.14/webbit-0.4.14.jar:/Users/monocept/.m2/repository/io/netty/netty/3.5.2.Final/netty-3.5.2.Final.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/selenium-leg-rc/2.51.0/selenium-leg-rc-2.51.0.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/2.51.0/selenium-firefox-driver-2.51.0.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/2.51.0/selenium-remote-driver-2.51.0.jar:/Users/monocept/.m2/repository/cglib/cglib-nodep/2.1_3/cglib-nodep-2.1_3.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/selenium-api/2.51.0/selenium-api-2.51.0.jar:/Users/monocept/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/monocept/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/monocept/.m2/repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar:/Users/monocept/.m2/repository/org/apache/poi/poi/3.9/poi-3.9.jar:/Users/monocept/.m2/repository/io/appium/java-client/3.2.0/java-client-3.2.0.jar:/Users/monocept/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/monocept/.m2/repository/org/apache/httpcomponents/httpclient/4.3.3/httpclient-4.3.3.jar:/Users/monocept/.m2/repository/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar:/Users/monocept/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/Users/monocept/.m2/repository/com/google/guava/guava/17.0/guava-17.0.jar:/Users/monocept/.m2/repository/cglib/cglib/3.1/cglib-3.1.jar:/Users/monocept/.m2/repository/org/ow2/asm/asm/4.2/asm-4.2.jar:/Users/monocept/.m2/repository/commons-validator/commons-validator/1.4.1/commons-validator-1.4.1.jar:/Users/monocept/.m2/repository/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar:/Users/monocept/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/monocept/.m2/repository/ru/yandex/qatools/allure/allure-testng-adaptor/1.4.16/allure-testng-adaptor-1.4.16.jar:/Users/monocept/.m2/repository/ru/yandex/qatools/allure/allure-java-aspects/1.4.16/allure-java-aspects-1.4.16.jar:/Users/monocept/.m2/repository/ru/yandex/qatools/allure/allure-java-adaptor-api/1.4.16/allure-java-adaptor-api-1.4.16.jar:/Users/monocept/.m2/repository/ru/yandex/qatools/allure/allure-java-annotations/1.4.16/allure-java-annotations-1.4.16.jar:/Users/monocept/.m2/repository/ru/yandex/qatools/allure/allure-model/1.4.16/allure-model-1.4.16.jar:/Users/monocept/.m2/repository/org/jvnet/jaxb2_commons/jaxb2-basics-runtime/0.9.3/jaxb2-basics-runtime-0.9.3.jar:/Users/monocept/.m2/repository/ru/yandex/qatools/properties/properties-loader/1.5/properties-loader-1.5.jar:/Users/monocept/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.3/commons-beanutils-core-1.8.3.jar:/Users/monocept/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/Users/monocept/.m2/repository/org/apache/tika/tika-core/1.7/tika-core-1.7.jar:/Users/monocept/.m2/repository/org/aspectj/aspectjrt/1.8.3/aspectjrt-1.8.3.jar:/Users/monocept/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12"/>
+    <property name="user.home" value="/Users/monocept"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="monocept"/>
+    <property name="java.class.path" value="/Users/monocept/Desktop/ads-android-master/target/test-classes:/Users/monocept/Desktop/ads-android-master/target/classes:/Users/monocept/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/monocept/.m2/repository/org/testng/testng/6.9.4/testng-6.9.4.jar:/Users/monocept/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/Users/monocept/.m2/repository/com/beust/jcommander/1.48/jcommander-1.48.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/selenium-server/2.51.0/selenium-server-2.51.0.jar:/Users/monocept/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.jar:/Users/monocept/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.jar:/Users/monocept/.m2/repository/mx4j/mx4j-tools/3.0.1/mx4j-tools-3.0.1.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.2.13.v20150730/jetty-repacked-9.2.13.v20150730.jar:/Users/monocept/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/jetty-rc-repacked/5/jetty-rc-repacked-5.jar:/Users/monocept/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/monocept/.m2/repository/org/yaml/snakeyaml/1.8/snakeyaml-1.8.jar:/Users/monocept/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/selenium-java/2.51.0/selenium-java-2.51.0.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/2.51.0/selenium-chrome-driver-2.51.0.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/2.51.0/selenium-edge-driver-2.51.0.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/selenium-htmlunit-driver/2.51.0/selenium-htmlunit-driver-2.51.0.jar:/Users/monocept/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.18/htmlunit-2.18.jar:/Users/monocept/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/Users/monocept/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/Users/monocept/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar:/Users/monocept/.m2/repository/org/apache/httpcomponents/httpmime/4.5/httpmime-4.5.jar:/Users/monocept/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.17/htmlunit-core-js-2.17.jar:/Users/monocept/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/Users/monocept/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/monocept/.m2/repository/net/sourceforge/nekohtml/nekohtml/1.9.22/nekohtml-1.9.22.jar:/Users/monocept/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.16/cssparser-0.9.16.jar:/Users/monocept/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar:/Users/monocept/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.2.12.v20150709/websocket-client-9.2.12.v20150709.jar:/Users/monocept/.m2/repository/org/eclipse/jetty/jetty-util/9.2.12.v20150709/jetty-util-9.2.12.v20150709.jar:/Users/monocept/.m2/repository/org/eclipse/jetty/jetty-io/9.2.12.v20150709/jetty-io-9.2.12.v20150709.jar:/Users/monocept/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.2.12.v20150709/websocket-common-9.2.12.v20150709.jar:/Users/monocept/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.2.12.v20150709/websocket-api-9.2.12.v20150709.jar:/Users/monocept/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.51.0/selenium-ie-driver-2.51.0.jar:/Users/monocept/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar:/Users/monocept/.m2/repository/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/2.51.0/selenium-safari-driver-2.51.0.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/selenium-support/2.51.0/selenium-support-2.51.0.jar:/Users/monocept/.m2/repository/org/webbitserver/webbit/0.4.14/webbit-0.4.14.jar:/Users/monocept/.m2/repository/io/netty/netty/3.5.2.Final/netty-3.5.2.Final.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/selenium-leg-rc/2.51.0/selenium-leg-rc-2.51.0.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/2.51.0/selenium-firefox-driver-2.51.0.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/2.51.0/selenium-remote-driver-2.51.0.jar:/Users/monocept/.m2/repository/cglib/cglib-nodep/2.1_3/cglib-nodep-2.1_3.jar:/Users/monocept/.m2/repository/org/seleniumhq/selenium/selenium-api/2.51.0/selenium-api-2.51.0.jar:/Users/monocept/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/monocept/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/monocept/.m2/repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar:/Users/monocept/.m2/repository/org/apache/poi/poi/3.9/poi-3.9.jar:/Users/monocept/.m2/repository/io/appium/java-client/3.2.0/java-client-3.2.0.jar:/Users/monocept/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/monocept/.m2/repository/org/apache/httpcomponents/httpclient/4.3.3/httpclient-4.3.3.jar:/Users/monocept/.m2/repository/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar:/Users/monocept/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/Users/monocept/.m2/repository/com/google/guava/guava/17.0/guava-17.0.jar:/Users/monocept/.m2/repository/cglib/cglib/3.1/cglib-3.1.jar:/Users/monocept/.m2/repository/org/ow2/asm/asm/4.2/asm-4.2.jar:/Users/monocept/.m2/repository/commons-validator/commons-validator/1.4.1/commons-validator-1.4.1.jar:/Users/monocept/.m2/repository/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar:/Users/monocept/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/monocept/.m2/repository/ru/yandex/qatools/allure/allure-testng-adaptor/1.4.16/allure-testng-adaptor-1.4.16.jar:/Users/monocept/.m2/repository/ru/yandex/qatools/allure/allure-java-aspects/1.4.16/allure-java-aspects-1.4.16.jar:/Users/monocept/.m2/repository/ru/yandex/qatools/allure/allure-java-adaptor-api/1.4.16/allure-java-adaptor-api-1.4.16.jar:/Users/monocept/.m2/repository/ru/yandex/qatools/allure/allure-java-annotations/1.4.16/allure-java-annotations-1.4.16.jar:/Users/monocept/.m2/repository/ru/yandex/qatools/allure/allure-model/1.4.16/allure-model-1.4.16.jar:/Users/monocept/.m2/repository/org/jvnet/jaxb2_commons/jaxb2-basics-runtime/0.9.3/jaxb2-basics-runtime-0.9.3.jar:/Users/monocept/.m2/repository/ru/yandex/qatools/properties/properties-loader/1.5/properties-loader-1.5.jar:/Users/monocept/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.3/commons-beanutils-core-1.8.3.jar:/Users/monocept/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/Users/monocept/.m2/repository/org/apache/tika/tika-core/1.7/tika-core-1.7.jar:/Users/monocept/.m2/repository/org/aspectj/aspectjrt/1.8.3/aspectjrt-1.8.3.jar:/Users/monocept/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="/var/folders/6y/3w4t1jld3997y9q_6cvwswqr0000gn/T/surefirebooter1059516785436673033.jar /var/folders/6y/3w4t1jld3997y9q_6cvwswqr0000gn/T/surefire5142725548303426221tmp /var/folders/6y/3w4t1jld3997y9q_6cvwswqr0000gn/T/surefire4238946639624651774tmp"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_60"/>
+    <property name="java.ext.dirs" value="/Users/monocept/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="http.proxyHost" value="127.0.0.1"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="localRepository" value="/Users/monocept/.m2/repository"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="https.proxyPort" value="8888"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Case_C415129_Verify_Weatherfx_API_Call_Response_When_User_Selects_Contextual_Locations" time="0.03"/>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Case_C333173_Verify_WeatherFX_API_Request_For_Wfxtg_Value" time="4.151">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:55)
+	at twc.Automation.General.Functions.get_Wfxtg_values(Functions.java:730)
+	at twc.Automation.General.Functions.validate_Wfxtg_Value_With_Pubads_Call(Functions.java:217)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Case_C333173_Verify_WeatherFX_API_Request_For_Wfxtg_Value(smokeTestCases.java:153)
+</failure>
+    <system-out>================= Wfxtg Values Test Case Started =========================
+No Data Found in XML File
+Retrying test Smoke_Test_Case_C333173_Verify_WeatherFX_API_Request_For_Wfxtg_Value with status FAILURE for the 1 time(s).
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Case_C333173_Verify_WeatherFX_API_Request_For_Wfxtg_Value" time="4.047">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:55)
+	at twc.Automation.General.Functions.get_Wfxtg_values(Functions.java:730)
+	at twc.Automation.General.Functions.validate_Wfxtg_Value_With_Pubads_Call(Functions.java:217)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Case_C333173_Verify_WeatherFX_API_Request_For_Wfxtg_Value(smokeTestCases.java:150)
+</failure>
+    <system-out>================= Wfxtg Values Test Case Started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Case_C333174_Verify_Factual_Call" time="0.026">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:55)
+	at twc.Automation.General.Functions.read_API_Call_Data(Functions.java:248)
+	at twc.Automation.General.Functions.validate_API_Call_With_PubAds_Call(Functions.java:139)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Case_C333174_Verify_Factual_Call(smokeTestCases.java:169)
+</failure>
+    <system-out>================= Factual Call Test Case Started =========================
+================= CXTG Values Test Case Started =========================
+================= CXTG Values Test Case End =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Case_C333182_Verify_Lotame_Call" time="0"/>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Case_C333179_Verify_Ad_Call_Is_Made_On_Pull_To_Refresh" time="18.174">
+    <failure message="Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;win2003.corp.monocept.com&apos;, ip: &apos;192.168.1.154&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: AndroidDriver
+Capabilities [{app=/Users/monocept/Desktop/ads-android-master/APKFile/app_google_universal_debug_811000122.apk, appPackage=com.weather.Weather, networkConnectionEnabled=true, noReset=false, warnings={}, databaseEnabled=false, deviceName=03157df33d91c039, platform=LINUX, desired={app=/Users/monocept/Desktop/ads-android-master/APKFile/app_google_universal_debug_811000122.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=false, newCommandTimeout=100000.0, autoLaunch=true, platformVersion=6.0.1, platformName=Android, deviceName=Samsung S6}, appium-version=1.4.13, newCommandTimeout=100000.0, autoLaunch=true, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 771ac9d5-952e-469a-99c1-5c4378347c45" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;win2003.corp.monocept.com&apos;, ip: &apos;192.168.1.154&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: AndroidDriver
+Capabilities [{app=/Users/monocept/Desktop/ads-android-master/APKFile/app_google_universal_debug_811000122.apk, appPackage=com.weather.Weather, networkConnectionEnabled=true, noReset=false, warnings={}, databaseEnabled=false, deviceName=03157df33d91c039, platform=LINUX, desired={app=/Users/monocept/Desktop/ads-android-master/APKFile/app_google_universal_debug_811000122.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=false, newCommandTimeout=100000.0, autoLaunch=true, platformVersion=6.0.1, platformName=Android, deviceName=Samsung S6}, appium-version=1.4.13, newCommandTimeout=100000.0, autoLaunch=true, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 771ac9d5-952e-469a-99c1-5c4378347c45
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:911)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:178)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at twc.Automation.HandleWithApp.AppFunctions.Pull_To_Refresh(AppFunctions.java:879)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Case_C333179_Verify_Ad_Call_Is_Made_On_Pull_To_Refresh(smokeTestCases.java:206)
+Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;win2003.corp.monocept.com&apos;, ip: &apos;192.168.1.154&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:64)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 50 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:52)
+	... 51 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:117)
+	... 64 more
+</failure>
+    <system-out>================= Pull To Refresh Test Case Started =========================
+Deleted all the files in the specified folder
+clicked clear session
+Pull the screen to REFRESH is Start
+</system-out>
+    <system-err>Mar 22, 2018 5:25:27 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: com.weather.Weather:id/temperature)
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;win2003.corp.monocept.com&apos;, ip: &apos;192.168.1.154&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: AndroidDriver
+Capabilities [{app=/Users/monocept/Desktop/ads-android-master/APKFile/app_google_universal_debug_811000122.apk, appPackage=com.weather.Weather, networkConnectionEnabled=true, noReset=false, warnings={}, databaseEnabled=false, deviceName=03157df33d91c039, platform=LINUX, desired={app=/Users/monocept/Desktop/ads-android-master/APKFile/app_google_universal_debug_811000122.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=false, newCommandTimeout=100000.0, autoLaunch=true, platformVersion=6.0.1, platformName=Android, deviceName=Samsung S6}, appium-version=1.4.13, newCommandTimeout=100000.0, autoLaunch=true, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 771ac9d5-952e-469a-99c1-5c4378347c45
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:911)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:178)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at twc.Automation.HandleWithApp.AppFunctions.Pull_To_Refresh(AppFunctions.java:879)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Case_C333179_Verify_Ad_Call_Is_Made_On_Pull_To_Refresh(smokeTestCases.java:206)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:73)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:94)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;win2003.corp.monocept.com&apos;, ip: &apos;192.168.1.154&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:64)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 50 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:52)
+	... 51 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:117)
+	... 64 more
+
+</system-err>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Case_C333172_Verify_Ad_Calls_On_Clean_Launch" time="20.029">
+    <failure message="Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;win2003.corp.monocept.com&apos;, ip: &apos;192.168.1.154&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: AndroidDriver
+Capabilities [{app=/Users/monocept/Desktop/ads-android-master/APKFile/app_google_universal_debug_811000122.apk, appPackage=com.weather.Weather, networkConnectionEnabled=true, noReset=false, warnings={}, databaseEnabled=false, deviceName=03157df33d91c039, platform=LINUX, desired={app=/Users/monocept/Desktop/ads-android-master/APKFile/app_google_universal_debug_811000122.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=false, newCommandTimeout=100000.0, autoLaunch=true, platformVersion=6.0.1, platformName=Android, deviceName=Samsung S6}, appium-version=1.4.13, newCommandTimeout=100000.0, autoLaunch=true, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 771ac9d5-952e-469a-99c1-5c4378347c45" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;win2003.corp.monocept.com&apos;, ip: &apos;192.168.1.154&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: AndroidDriver
+Capabilities [{app=/Users/monocept/Desktop/ads-android-master/APKFile/app_google_universal_debug_811000122.apk, appPackage=com.weather.Weather, networkConnectionEnabled=true, noReset=false, warnings={}, databaseEnabled=false, deviceName=03157df33d91c039, platform=LINUX, desired={app=/Users/monocept/Desktop/ads-android-master/APKFile/app_google_universal_debug_811000122.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=false, newCommandTimeout=100000.0, autoLaunch=true, platformVersion=6.0.1, platformName=Android, deviceName=Samsung S6}, appium-version=1.4.13, newCommandTimeout=100000.0, autoLaunch=true, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 771ac9d5-952e-469a-99c1-5c4378347c45
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.getSize(RemoteWebDriver.java:914)
+	at twc.Automation.HandleWithApp.AppFunctions.Swipe(AppFunctions.java:907)
+	at twc.Automation.HandleWithApp.AppFunctions.CleanLaunch_launch(AppFunctions.java:1061)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Case_C333172_Verify_Ad_Calls_On_Clean_Launch(smokeTestCases.java:223)
+Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;win2003.corp.monocept.com&apos;, ip: &apos;192.168.1.154&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:64)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 37 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:52)
+	... 38 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:117)
+	... 51 more
+</failure>
+    <system-out>================= Clean App Launch Test Case Started =========================
+Deleted all the files in the specified folder
+clicked clear session
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Case_C333175_Verify_Ad_Is_Present_On_Extended_Hourly_Page" time="5.021">
+    <failure message="Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;win2003.corp.monocept.com&apos;, ip: &apos;192.168.1.154&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: AndroidDriver
+Capabilities [{app=/Users/monocept/Desktop/ads-android-master/APKFile/app_google_universal_debug_811000122.apk, appPackage=com.weather.Weather, networkConnectionEnabled=true, noReset=false, warnings={}, databaseEnabled=false, deviceName=03157df33d91c039, platform=LINUX, desired={app=/Users/monocept/Desktop/ads-android-master/APKFile/app_google_universal_debug_811000122.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=false, newCommandTimeout=100000.0, autoLaunch=true, platformVersion=6.0.1, platformName=Android, deviceName=Samsung S6}, appium-version=1.4.13, newCommandTimeout=100000.0, autoLaunch=true, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 771ac9d5-952e-469a-99c1-5c4378347c45" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;win2003.corp.monocept.com&apos;, ip: &apos;192.168.1.154&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: AndroidDriver
+Capabilities [{app=/Users/monocept/Desktop/ads-android-master/APKFile/app_google_universal_debug_811000122.apk, appPackage=com.weather.Weather, networkConnectionEnabled=true, noReset=false, warnings={}, databaseEnabled=false, deviceName=03157df33d91c039, platform=LINUX, desired={app=/Users/monocept/Desktop/ads-android-master/APKFile/app_google_universal_debug_811000122.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=false, newCommandTimeout=100000.0, autoLaunch=true, platformVersion=6.0.1, platformName=Android, deviceName=Samsung S6}, appium-version=1.4.13, newCommandTimeout=100000.0, autoLaunch=true, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 771ac9d5-952e-469a-99c1-5c4378347c45
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:865)
+	at twc.Automation.HandleWithApp.AppFunctions.verify_adpresent_onextended_page(AppFunctions.java:929)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Case_C333175_Verify_Ad_Is_Present_On_Extended_Hourly_Page(smokeTestCases.java:239)
+Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;win2003.corp.monocept.com&apos;, ip: &apos;192.168.1.154&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:64)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 36 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:52)
+	... 37 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:117)
+	... 50 more
+</failure>
+    <system-out>================= Hourly Module Test Case Started =========================
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Case_C333180_Verify_Ad_Is_Present_On_Extended_Daily_Page" time="5.013">
+    <failure message="Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;win2003.corp.monocept.com&apos;, ip: &apos;192.168.1.154&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: AndroidDriver
+Capabilities [{app=/Users/monocept/Desktop/ads-android-master/APKFile/app_google_universal_debug_811000122.apk, appPackage=com.weather.Weather, networkConnectionEnabled=true, noReset=false, warnings={}, databaseEnabled=false, deviceName=03157df33d91c039, platform=LINUX, desired={app=/Users/monocept/Desktop/ads-android-master/APKFile/app_google_universal_debug_811000122.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=false, newCommandTimeout=100000.0, autoLaunch=true, platformVersion=6.0.1, platformName=Android, deviceName=Samsung S6}, appium-version=1.4.13, newCommandTimeout=100000.0, autoLaunch=true, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 771ac9d5-952e-469a-99c1-5c4378347c45" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;win2003.corp.monocept.com&apos;, ip: &apos;192.168.1.154&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: AndroidDriver
+Capabilities [{app=/Users/monocept/Desktop/ads-android-master/APKFile/app_google_universal_debug_811000122.apk, appPackage=com.weather.Weather, networkConnectionEnabled=true, noReset=false, warnings={}, databaseEnabled=false, deviceName=03157df33d91c039, platform=LINUX, desired={app=/Users/monocept/Desktop/ads-android-master/APKFile/app_google_universal_debug_811000122.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=false, newCommandTimeout=100000.0, autoLaunch=true, platformVersion=6.0.1, platformName=Android, deviceName=Samsung S6}, appium-version=1.4.13, newCommandTimeout=100000.0, autoLaunch=true, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 771ac9d5-952e-469a-99c1-5c4378347c45
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:865)
+	at twc.Automation.HandleWithApp.AppFunctions.verify_adpresent_onextended_page(AppFunctions.java:929)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Case_C333180_Verify_Ad_Is_Present_On_Extended_Daily_Page(smokeTestCases.java:254)
+Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;win2003.corp.monocept.com&apos;, ip: &apos;192.168.1.154&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:64)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 36 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:52)
+	... 37 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:117)
+	... 50 more
+</failure>
+    <system-out>================= Daily Module Test Case Started =========================
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Case_C333176_Verify_Ad_Is_Present_On_Extended_Map_Page" time="5.018">
+    <failure message="Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;win2003.corp.monocept.com&apos;, ip: &apos;192.168.1.154&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: AndroidDriver
+Capabilities [{app=/Users/monocept/Desktop/ads-android-master/APKFile/app_google_universal_debug_811000122.apk, appPackage=com.weather.Weather, networkConnectionEnabled=true, noReset=false, warnings={}, databaseEnabled=false, deviceName=03157df33d91c039, platform=LINUX, desired={app=/Users/monocept/Desktop/ads-android-master/APKFile/app_google_universal_debug_811000122.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=false, newCommandTimeout=100000.0, autoLaunch=true, platformVersion=6.0.1, platformName=Android, deviceName=Samsung S6}, appium-version=1.4.13, newCommandTimeout=100000.0, autoLaunch=true, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 771ac9d5-952e-469a-99c1-5c4378347c45" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;win2003.corp.monocept.com&apos;, ip: &apos;192.168.1.154&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: AndroidDriver
+Capabilities [{app=/Users/monocept/Desktop/ads-android-master/APKFile/app_google_universal_debug_811000122.apk, appPackage=com.weather.Weather, networkConnectionEnabled=true, noReset=false, warnings={}, databaseEnabled=false, deviceName=03157df33d91c039, platform=LINUX, desired={app=/Users/monocept/Desktop/ads-android-master/APKFile/app_google_universal_debug_811000122.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=false, newCommandTimeout=100000.0, autoLaunch=true, platformVersion=6.0.1, platformName=Android, deviceName=Samsung S6}, appium-version=1.4.13, newCommandTimeout=100000.0, autoLaunch=true, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 771ac9d5-952e-469a-99c1-5c4378347c45
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:865)
+	at twc.Automation.HandleWithApp.AppFunctions.verify_adpresent_onextended_page(AppFunctions.java:929)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Case_C333176_Verify_Ad_Is_Present_On_Extended_Map_Page(smokeTestCases.java:274)
+Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;win2003.corp.monocept.com&apos;, ip: &apos;192.168.1.154&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:64)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 36 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:52)
+	... 37 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:117)
+	... 50 more
+</failure>
+    <system-out>================= MAP Module Test Case Started =========================
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Case_C333175_Verify_Ad_Is_Present_On_Extended_News_Page" time="5.018">
+    <failure message="Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;win2003.corp.monocept.com&apos;, ip: &apos;192.168.1.154&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: AndroidDriver
+Capabilities [{app=/Users/monocept/Desktop/ads-android-master/APKFile/app_google_universal_debug_811000122.apk, appPackage=com.weather.Weather, networkConnectionEnabled=true, noReset=false, warnings={}, databaseEnabled=false, deviceName=03157df33d91c039, platform=LINUX, desired={app=/Users/monocept/Desktop/ads-android-master/APKFile/app_google_universal_debug_811000122.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=false, newCommandTimeout=100000.0, autoLaunch=true, platformVersion=6.0.1, platformName=Android, deviceName=Samsung S6}, appium-version=1.4.13, newCommandTimeout=100000.0, autoLaunch=true, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 771ac9d5-952e-469a-99c1-5c4378347c45" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;win2003.corp.monocept.com&apos;, ip: &apos;192.168.1.154&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: AndroidDriver
+Capabilities [{app=/Users/monocept/Desktop/ads-android-master/APKFile/app_google_universal_debug_811000122.apk, appPackage=com.weather.Weather, networkConnectionEnabled=true, noReset=false, warnings={}, databaseEnabled=false, deviceName=03157df33d91c039, platform=LINUX, desired={app=/Users/monocept/Desktop/ads-android-master/APKFile/app_google_universal_debug_811000122.apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=false, newCommandTimeout=100000.0, autoLaunch=true, platformVersion=6.0.1, platformName=Android, deviceName=Samsung S6}, appium-version=1.4.13, newCommandTimeout=100000.0, autoLaunch=true, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 771ac9d5-952e-469a-99c1-5c4378347c45
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:865)
+	at twc.Automation.HandleWithApp.AppFunctions.verify_adpresent_onextended_page(AppFunctions.java:929)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Case_C333175_Verify_Ad_Is_Present_On_Extended_News_Page(smokeTestCases.java:294)
+Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;win2003.corp.monocept.com&apos;, ip: &apos;192.168.1.154&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:64)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 36 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:52)
+	... 37 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:117)
+	... 50 more
+</failure>
+    <system-out>================= NEWS Module Test Case Started =========================
+</system-out>
+  </testcase>
+</testsuite>
